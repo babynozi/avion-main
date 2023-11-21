@@ -1,0 +1,35 @@
+.bars {
+  width: 50%;
+  height: 89vh;
+  position: fixed;
+  right: -100%;
+  top: 70px;
+  z-index: 5;
+  background-color: white;
+  display: flex;
+  padding: 50px 10px 10px 16px;
+  transition: all 0.3s linear;
+}
+.bars ul {
+  display: flex;
+  flex-direction: column;
+}
+.bars ul li {
+  height: 50px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+.bars ul li:last-child {
+  border-bottom: none;
+}
+.bars ul li:hover {
+  background-color: gainsboro;
+}
+.bars ul li:active {
+  background-color: rgb(83, 78, 78);
+}
+.bars.show {
+  right: 0;
+}

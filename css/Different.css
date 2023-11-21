@@ -1,0 +1,56 @@
+.different {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  gap: 56px;
+  padding: 60px 0 86px;
+}
+.different h1 {
+  color: #2a254b;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+}
+.different .dif_Boxes {
+  display: flex;
+  gap: 58px;
+}
+.different .dif_Boxes .dif_Box {
+  width: 270px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.different .dif_Boxes .dif_Box i {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.different .dif_Boxes .dif_Box h2,
+.different .dif_Boxes .dif_Box p {
+  color: #2a254b;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+}
+.different .dif_Boxes .dif_Box p {
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+}
+
+@media screen and (max-width: 900px) {
+  .different {
+    padding: 44px 24px;
+    margin-top: 0;
+  }
+  .different .dif_Boxes {
+    flex-wrap: wrap;
+    gap: 58px;
+  }
+  .different .dif_Boxes .dif_Box {
+    width: 370px;
+  }
+}
